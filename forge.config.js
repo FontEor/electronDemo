@@ -49,16 +49,16 @@ module.exports = {
     }),
   ],
   publishers: [
-    {
-      name: "@electron-forge/publisher-github",
-      config: {
-        repository: {
-          owner: "FontEor",
-          name: "electronDemo",
-        },
-        prerelease: false,
-        draft: true,
-      },
-    },
+    // {
+    //   name: "@electron-forge/publisher-github",
+    //   config: {
+    //     repository: {
+    //       owner: "FontEor",
+    //       name: "electronDemo",
+    //     },
+    //     prerelease: false,
+    //     draft: true,
+    //   },
+    // },
   ],
 };
