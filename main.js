@@ -1,6 +1,10 @@
 const { app, BrowserWindow, ipcMain } = require("electron/main");
 const path = require("node:path");
 // require("update-electron-app")();
+try {
+  require("electron-reloader")(module);
+} catch (_) {}
+
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
@@ -11,6 +15,7 @@ const createWindow = () => {
   });
 
   win.loadFile("index.html");
+  //   win.loadURL("https://github.com");
 };
 
 app.whenReady().then(() => {

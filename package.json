@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "publish": "electron-forge publish"
+    "publish": "electron-forge publish",
+    "dev": "nodemon --watch ./ --exec electron ."
   },
   "author": "FontEor",
   "license": "ISC",
@@ -22,7 +23,8 @@
     "@electron-forge/plugin-fuses": "^7.8.1",
     "@electron-forge/publisher-github": "^7.8.1",
     "@electron/fuses": "^1.8.0",
-    "electron": "^36.3.1"
+    "electron": "^36.3.1",
+    "electron-reloader": "^1.2.3"
   },
   "packageManager": "yarn@4.6.0+sha224.acd0786f07ffc6c933940eb65fc1d627131ddf5455bddcc295dc90fd",
   "dependencies": {

@@ -6,3 +6,5 @@ const func = async () => {
 };
 
 func();
+
+console.log(window.myAPI);
